@@ -1,20 +1,115 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Cy's music</title>
-</head>
-
-<body>
-    <header>
-        This page is H5 music by chenyi.
-    </header>
-    <div class="main-content"></div>
-    <footer>
-        &copy;2017 music
-    </footer>
-</body>
-
+	<head>
+		<meta charset="utf-8">
+		<title>最爱陈奕迅（Eason Chan）</title>
+		<meta name="description" content="">
+		<meta name="author" content="Darcy">
+		<meta name="keywords" content="最爱陈奕迅（Eason Chan）" />
+		<meta name="description" content="最爱陈奕迅（Eason Chan）" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+		<link type = "text/css" rel = "stylesheet" href = "css/music.css"></link>
+	</head>
+	<body>
+		<img id = "bgImg" src = "img/1.jpg">
+		<audio id="myaudio" src="mp3/263506075.mp3" controls="controls" hidden="true"></audio>
+		<div class = "main" id = "main">
+			<div class = "topBar">
+				<h1>陈奕迅（Eason Chan）</h1>
+			</div>
+			<div class = "listWrap">
+				<div class = "songWrap">
+					<ol class = "songList">
+						<li savename = "263506075.mp3">
+							<span class = "songName">浮夸</span>
+						</li>
+						<li savename = "263506076.mp3">
+							<div class = "songName">不要说话</div>
+						</li>
+						<li savename = "263506077.mp3">
+							<span class = "songName">好久不见</span>
+						</li>
+						<li savename = "263506078.mp3">
+							<span class = "songName">K歌之王</span>
+						</li>
+						<li savename = "263506079.mp3">
+							<span class = "songName">陪你度过漫长岁月</span>
+						</li>
+						<li savename = "263506080.mp3">
+							<span class = "songName">爱情转移</span>
+						</li>
+						<li savename = "263506081.mp3">
+							<span class = "songName">稳稳的幸福</span>
+						</li>
+						<li savename = "263506082.mp3">
+							<span class = "songName">淘汰</span>
+						</li>
+						<li savename = "263506083.mp3">
+							<span class = "songName">一丝不挂</span>
+						</li>
+						<li savename = "263506084.mp3">
+							<span class = "songName">红玫瑰</span>
+						</li>
+					</ol>
+				</div>
+				<div class = "img-lrc">
+					<div class = "songImg">
+                        <img src="img/cyx.png" style = "opacity:0.6"/>
+					</div>
+					<div class = "lrcWrap">
+						<ul></ul>
+					</div>
+				</div>
+				
+				<br style = "clear:both">
+			</div>
+			<div class = "controler">
+				<div class = "song">
+					<div class = "lastBtn"><i class="fa fa-backward"></i></div>
+					<div class = "play-pause" flag = "0"><i class="fa fa-play"></i></div>
+					<div class = "nextBtn"><i class="fa fa-forward"></i></div>
+				</div>
+				<div class = "progress">
+					<div class = "songInfo">
+						<span>浮夸(1/10)</span>
+						<div class = "currentTime">04:45</div>
+					</div>
+					<div class = "bar">
+						<div class = "proBar"></div>
+					</div>
+				</div>
+				<div class = "module">
+					<div class = "random" title = "随机播放"><i class="fa fa-random"></i></div>
+					<div class = "loop" title = "单曲循环"><i class="fa fa-retweet"></i></div>
+					<div class = "queue" title = "顺序播放"><i class="fa fa-reorder"></i></div>
+				</div>
+				<div class = "setVolume">
+					<div class = "vIcon"></div>
+					<input id="volume" name="volume" min="0" max="1" step="0.1" type="range"/>
+				</div>
+			</div>
+		</div>
+		
+		<script type = "text/javascript">
+            var winH = document.documentElement.clientHeight;
+            var main = document.getElementById("main");
+            main.style.height = (winH - 20) + "px";
+		</script>
+		
+		<div class = "playing">
+			<div class = "p1"></div>
+			<div class = "p2"></div>
+			<div class = "p3"></div>
+			<div class = "p4"></div>
+			<div class = "p5"></div>
+			<div class = "p6"></div>
+			<div class = "p7"></div>
+			<div class = "p8"></div>
+		</div>
+	</body>
+	<script type = "text/javascript" src = "js/jquery-1.9.1.min.js"></script>
+	<script type = "text/javascript" src = "js/lrc.js"></script>
+	<script language="javascript" type="text/javascript" src = "js/music.js"></script>
 </html>
