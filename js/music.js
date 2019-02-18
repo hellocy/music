@@ -166,7 +166,7 @@ window.onload = function(){
 		$(".songList li:eq(" + (index)+ ")").append($(".playing"));
 		if(flag == 0){
 			myAudio.play();
-			$(".play-pause .fa").removeClass("fa-play").addClass("fa-pause");
+			$(".play-pause .fa").removeClass("fa-play-circle-o").addClass("fa-pause-circle-o");
 			$(".playing div,.songImg img").show().css({
 				"animation-play-state" : "running"
 			});
@@ -183,7 +183,7 @@ window.onload = function(){
 					"background" : ""
 				});
 			});
-			$(".play-pause .fa").removeClass("fa-pause").addClass("fa-play");
+			$(".play-pause .fa").removeClass("fa-pause-circle-o").addClass("fa-play-circle-o");
 			
 			$(".playing div,.songImg img").css({
 				"animation-play-state" : "paused"
@@ -257,7 +257,7 @@ function play(auto,index,name) {
 	
 	$(".songInfo span:first").html(songName + " ("+ (index + 1) +"/"+ ($(".songList li").length) +")");
 	$("title").html(songName + " －最爱陈奕迅（Eason Chan）");
-	$(".play-pause .fa").removeClass("fa-play").addClass("fa-pause");
+	$(".play-pause .fa").removeClass("fa-play-circle-o").addClass("fa-pause-circle-o");
 	if($current){
 		$current.append($(".playing").show());
 	}
