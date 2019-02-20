@@ -22,10 +22,50 @@ body {
 .main {
 	background:#333;
 	color:#eee;
+	height: 100vh;
 	overflow:hidden;
 }
 .topBar {
 	text-align:center; 
+}
+
+.songImg {
+	width:5rem;
+	height:5rem;
+	background: #000;
+	border-radius: 50%;
+	margin:5px auto;
+	text-align:center;
+	border: 1px solid #555;
+}
+.songImg img {
+	width:3.5rem;
+	height:3.5rem;
+	margin-top: 30px;
+	border-radius:50%;
+	box-shadow:0 0 5px 1px rgba(0,0,0,0.5);
+	animation:rotate 20s linear infinite paused;
+	-webkit-animation:rotate 20s linear infinite paused;
+}
+@keyframes rotate {
+	0% {
+	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes rotate {
+	0% {
+	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	}
+	100% {
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+	}
 }
 
 .control-inner{
@@ -73,6 +113,7 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
+	align-items: center;
 	width: 30%;
 	height:35px;
 	flex: 0 1 auto;
@@ -80,6 +121,7 @@ body {
 .module span {
 	flex: 0 1 auto;
 	width:33%;
+	text-align: center;
 }
 .module .fa{
 	color:#ccc;
@@ -187,40 +229,6 @@ td {
 	border-radius:20px;
 }
 .img-lrc {
-}
-.songImg {
-	width:150px;
-	height:150px;
-	margin:5px auto;
-	text-align:center;
-}
-.songImg img {
-	width:150px;
-	height:150px;
-	border-radius:50%;
-	box-shadow:0 0 5px 1px rgba(0,0,0,0.5);
-	animation:rotate 20s linear infinite paused;
-	-webkit-animation:rotate 20s linear infinite paused;
-}
-@keyframes rotate {
-	0% {
-	transform:rotate(0deg);
-	-webkit-transform:rotate(0deg);
-	}
-	100% {
-		transform:rotate(360deg);
-		-webkit-transform:rotate(360deg);
-	}
-}
-@-webkit-keyframes rotate {
-	0% {
-	transform:rotate(0deg);
-	-webkit-transform:rotate(0deg);
-	}
-	100% {
-		transform:rotate(360deg);
-		-webkit-transform:rotate(360deg);
-	}
 }
 .lrcWrap {
 	width:100%;
